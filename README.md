@@ -1,6 +1,6 @@
-# Welcome to React Router!
+# Personal Finance Dashboard
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A comprehensive personal finance dashboard built with React Router for managing your finances effectively.
 
 ## Features
 
@@ -10,6 +10,14 @@ A modern, production-ready template for building full-stack React applications u
 - 🔄 Data loading and mutations
 - 🎉 TailwindCSS for styling
 - 📖 [React Router docs](https://reactrouter.com/)
+
+## Dashboard Features
+
+- 📊 **Overview**: Track your current balance, total income, and expenses at a glance.
+- 💰 **Pots**: Manage savings goals such as Savings, Gift, Concert Ticket, and New Laptop with progress tracking.
+- 📈 **Transactions**: View a list of recent transactions including dates, amounts, and sender/receiver details.
+- 🥧 **Budget Visualization**: Interactive pie chart displaying budget allocations across categories like Entertainment, Bills, Dining Out, and Personal Care.
+- 📅 **Recurring Bills**: Monitor paid bills, upcoming payments, and bills due soon.
 
 ## Getting Started
 
@@ -29,7 +37,7 @@ Start the development server with HMR:
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+Your application will be available at `http://localhost:5173`. Once running, navigate to the home page to see your personal finance overview.
 
 ## Building for Production
 
@@ -37,6 +45,27 @@ Create a production build:
 
 ```bash
 npm run build
+```
+
+## Project Structure
+
+```
+my-react-router-app/
+├── app/
+│   ├── components/
+│   │   └── components.jsx  # Reusable UI components (Navigation, Overview, Pots, etc.)
+│   ├── routes/
+│   │   └── home.jsx        # Main dashboard page with overview, pots, transactions, budget, and bills
+│   ├── root.jsx            # App root component
+│   ├── routes.js           # Route definitions
+│   └── app.css             # Global styles with Tailwind CSS
+├── public/
+│   ├── favicon.ico
+│   └── images/
+│       └── img.jpg         # Sample image used in transaction components
+├── package.json
+├── vite.config.js
+└── README.md
 ```
 
 ## Deployment
@@ -81,4 +110,4 @@ This template comes with [Tailwind CSS](https://tailwindcss.com/) already config
 
 ---
 
-Built with ❤️ using React Router.
+Built with ❤️ using React Router for personal finance management.
