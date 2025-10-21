@@ -92,7 +92,7 @@ export function Navigation({ img, name }) {
   return (
     <div>
       <a
-        href={name}
+        href={`#${name}`}
         className="flex flex-col  text-center space-y-1 p-2 items-center hover:text-blue-400 cursor-pointer"
       >
         {img}
